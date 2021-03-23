@@ -9,12 +9,12 @@ package com.vd.datastructures;
  *
  * @author Vihan De Silva
  */
-public class Node {
-    private int value;
-    private Node next;
+public class Node<T> {
+    public T item;
+    public Node next;
     
-    public Node(int i){
-        value =i;
+    public Node(T i){
+        item =i;
     }
     
     public void next(Node n){
@@ -25,7 +25,7 @@ public class Node {
         return next;
     }
     
-    public int value(){
-        return value;
+    public T value(){
+        return item;
     }
 }

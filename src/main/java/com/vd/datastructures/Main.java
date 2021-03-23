@@ -11,9 +11,9 @@ package com.vd.datastructures;
  */
 public class Main {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
-        list.insertFirst(0);
-        list.insertFirst(1);
-        list.displayList();
+        LinkedList<String> list = new LinkedList();
+        
+        list.insertFirst("Hello");
+        list.insertLast("Last");
     }
 }
