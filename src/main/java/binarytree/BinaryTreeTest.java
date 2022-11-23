@@ -26,4 +26,15 @@ public class BinaryTreeTest {
 
         assertFalse(bt.containsNode(1));
     }
+    
+    @Test
+    public void assertThatBinaryTreeIsBalanced() {
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.add(1);
+        binaryTree.add(2);
+        binaryTree.add(3);
+        binaryTree.add(4);
+        
+        assertTrue(binaryTree.isBalanced(binaryTree.root));
+    }
 }
